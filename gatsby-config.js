@@ -2,10 +2,10 @@ module.exports = {
   siteMetadata: {
     title: `Development Journal`,
     author: `Justin Lowry`,
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    description: `Blog Documenting My Experiences During Lambda Labs`,
+    siteUrl: `https://admiring-davinci-469908.netlify.com/`,
     social: {
-      twitter: `kylemathews`
+      twitter: ``
     }
   },
   plugins: [
