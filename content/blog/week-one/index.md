@@ -41,6 +41,21 @@ I mostly ended up working on the back end this week, mostly on setting up the da
   * [trello](https://trello.com/c/lqKFh0lR/24-use-faker-to-create-teachers)
   * [git](https://github.com/Lambda-School-Labs/labs10-student-follow/pull/11)
 
+## Detailed Analysis
+
+As mentioned, I mostly worked on setting up the database this week. After coming up with the user model, I made the migrations for the tables, two of which are shown below.
+![teachers table](./migration_1.png)
+_teachers table_
+
+![students classes table](./migration_2.png)
+_students-classes table_
+
+One problem we stumbled against was dealing with how to truncate tables when the databse was reseeded. In SQLite, this is as simple as adding `knex.truncate()` to the beginning of the seeding function, but in Postgres this will throw a foreign constraint error on any tables with foreign keys. After some research, I came up with a messy solution and wrote a script to seed the files:
+![truncate script](./truncate_script.png)
+
+However, Chaya came up with the much cleaner solution of adding the truncate statement to the seeds, so I adopted that strategy:
+![truncating in the seed file](./seed_file.png)
+
 # Part Two - Milestone Reflections
 During the beginning of the week when we were analyzing the project specifications and analyzing the TDD, I quite a bit of time researching what database we should use and how to design the schema. We discussed whether to use a relational database such as Postgres or MySQL or a nonrelational database such as MongoDB.
 
@@ -50,3 +65,7 @@ After discussing the schema, I drafted this mock for the basic outline of our ta
 ![Schema](./schema.png)
 
 This schema provides most of the functionality we needed to begin our project, although we have made several changes to it and will most likely need to make a few more as the project grows.
+
+Our back end has been deployed on [heroku](https://refreshr.herokuapp.com/teachers). It currently displays 500 teachers created with faker.
+
+Our front end has been depolyed to [netlify](https://refreshr-app.netlify.com/). It is pulling the data from the backend and displaying the first name of all teachers in the database.
