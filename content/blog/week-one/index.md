@@ -5,7 +5,7 @@ date: "2019-02-15T08:00:00"
 ![Contributions](./contribs.png)
 *My github handle: dividedsky*
 
-# Part One - Individual Accomplishments
+# Part One: Individual Accomplishments
 ## Summary
 This was our first week in Lambda Labs, Lambda's five-week program where students work together on a team to create a real-world application. Our team got off to a good start, and it's exciting wrapping up the first week and looking ahead to what we hope to accomplish in the next four weeks.
 
@@ -56,7 +56,7 @@ One problem we stumbled against was dealing with how to truncate tables when the
 However, Chaya came up with the much cleaner solution of adding the truncate statement to the seeds, so I adopted that strategy:
 ![truncating in the seed file](./seed_file.png)
 
-# Part Two - Milestone Reflections
+# Part Two: Milestone Reflections
 During the beginning of the week when we were analyzing the project specifications and analyzing the TDD, I quite a bit of time researching what database we should use and how to design the schema. We discussed whether to use a relational database such as Postgres or MySQL or a nonrelational database such as MongoDB.
 
 In the end, we decided to go with a relational database and settled on Postgres. Postgres provides functionality similar to SQLite3, which we all have had some experience with at Lambda, but is more robust and more of a production-grade database. It also integrates much better with Heroku, which is where we are deploying our back end.
