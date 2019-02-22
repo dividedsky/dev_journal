@@ -71,9 +71,17 @@ Then each input can use the same handleChange function, which spreads out the pr
 
 ![handleChange](./handleChange.png)
 
-This was kind of fun to figure out how to implement this in hooks instead of in classes. Again, if there's a better way to do it, I would love to know about it.
+This was kind of fun to figure out how to implement this in hooks instead of in classes. Again, if you know of a better way to do this, I would be happy to know about it!
 
 # Part Two: Milestone Reflections
+
+Working together on a team has been an interesting and rewarding experience for me so far. I'm used to programming alone or with maybe one other person, having a whole repo of my own, able to jump around to whatever I want to work on without worrying about whether the changes I make in one area are going to disrupt what someone else is working on. Also, I've _never had to worry about merge conflicts!_
+
+Even in build week, which was a great experience, I was responsible for the whole back end. Though I definitely had to communicate with the front-end team, I knew what my responsibilities were, and I could jump around between writing database queries, creating endpoints, and implementing API's without worrying about breaking someone else's code.
+
+I would say the biggest thing we've done both to solidify as a group and keep everyone involved in decision-making is keeping in constant communication. Throughout the day, we're communicating both in Slack and in Google Hangouts. As an introvert, I feel like it's been a bit challenging at times to communicate as much or as well as I should, but it's also been really rewarding and fun. 
+
+I feel very fortunate to be on a team with four awesome teammates. Everyone has communicated and worked together very well. I'm looking forward to seeing the progress we make next week!
 
 
 
