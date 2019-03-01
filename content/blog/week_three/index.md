@@ -8,9 +8,9 @@ date: '2019-03-01T07:33:00'
 
 # Part One: Individual Accomplishments
 ## Summary
-Our third week in labs, we faced some challenges but made quite a bit of progress. While our think our site is quite where we would want in to be in terms of a UX/UI perspective, I'm confident that we've done enough work on the architecture of the site so that we're in a good place moving forward into next week.
+Our third week in labs, we faced some challenges but made quite a bit of progress. While our think our site is not quite where we would want in to be in terms of a UX/UI perspective, I'm confident that we've done enough work on the architecture of the site so that we're in a good place moving forward into next week.
 
-This week, I mostly spent my time working on SendGrid with Tim, adding endpoints to the backend, and updating the schema as we realized there were some SendGrid things we would need to keep track of that we had not originally accounted for. I also worked on a couple simple layouts for pages: the class list, the refreshr list, the campaign section of the create class form, and the edit class form.
+This week, I mostly spent my time working on adding new classes and integrating that with SendGrid, adding endpoints to the backend, and updating the schema as we realized there were some SendGrid variables we would need to keep track of that we had not originally accounted for. I also worked on a couple simple layouts for pages: the class list, the refreshr list, the campaign section of the create class form, and the edit class form.
 
 ## Tasks Pulled
 ### Front End
