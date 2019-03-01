@@ -18,7 +18,7 @@ On Wednesday and Thursday, I split time between working on Auth0 and helping Tim
 ### Front End
 * Billing Page
   * [github]('https://github.com/Lambda-School-Labs/labs10-student-follow/pull/35')
-  * [trell]('https://trello.com/c/Uc024Up1/57-stripe')
+  * [trello]('https://trello.com/c/Uc024Up1/57-stripe')
 
 * Class page layout
   * [github]('https://github.com/Lambda-School-Labs/labs10-student-follow/pull/51')
