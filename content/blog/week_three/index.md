@@ -61,3 +61,11 @@ Here's another one to update the column names on both the student and teachers t
 I'm sure this is common knowledge to a lot of people, but for me it was a nice discovery that has made my knex migrations cleaner, simpler, and easier to read.
 
 # Part Two: Milestone Reflections
+
+Working as a team to convert a disparate set of components into a cohesive product has been quite a challenge. Though we may still have a bit of work to do to get there, I think we made a lot of progress this week.
+
+It's difficult to get a comprehensive idea of where the site is at when everyone is working on separate pieces of it. Some of us were working on Auth0, some of us were working on SendGrid, some of us were working on design. And we were all working, individually or in groups, on separate pages of the site.
+
+This makes it hard to get an overview of the site as a whole. Furthermore, if I'm working on one component and get it working, it may break when it's integrated with someone else's component. Or my component may break their's.
+
+We've certainly faced some challenges in this regard, and perhaps we're a little bit behind where we'd like to be. But I feel confident in the overall progress of our project, and I'm looking forward to making it shine next week.
