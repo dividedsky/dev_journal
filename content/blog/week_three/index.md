@@ -25,15 +25,39 @@ This week, I mostly spent my time working on SendGrid with Tim, adding endpoints
   * [trello]('https://trello.com/c/LLn4GskP/63-front-end-with-sendgrid-flow')
 
 ### Back End
-* Add teachers_classes_refreshrs table to database
+* Add teachers\_classes\_refreshrs table to database
   * [github]('https://github.com/Lambda-School-Labs/labs10-student-follow/pull/68')
   * [trello]('https://trello.com/c/zntnBbxL/79-update-schema-with-teachersclassesrefreshrs-table')
 
 * Updating endpoints
   * [github]('https://github.com/Lambda-School-Labs/labs10-student-follow/pull/74')
+  * [trello]()
 
 * Adding columns to tables for SendGrid
   * [github]('https://github.com/Lambda-School-Labs/labs10-student-follow/pull/90')
   * [trello]('https://trello.com/c/aikFIWC5/91-add-sendgrid-columns-to-db')
 
+## Detailed Analysis
+One thing I've gotten more comfortable with this week is writing knex migrations. Knex migrations have always made me a little nervous. After countless corruptions of the migrations directory and other issues, I'm always a little bit scared to enter `knex migrate:latest` after writing new migrations.
 
+So when doing complex updates to the database schema--for example, when needing to change several tables--I've always preferred to do it in several migrations of small steps--make a migration, update one table, make a new migration, update another table, etc. This quickly leads to a cluttered and complex migrations directory.
+
+![so many migrations](./migrations_dir.png)
+
+This week, as we got into the details of SendGrid and realized that we would need to keep track of a lot of different SendGrid variables--recipient id's for students, list id's for classes, campaign id's for refreshrs--I found myself having to update the database quite a few times.
+
+In the past, if I had three tables to update, I probably would have done that in three separate migrations, then crossed my fingers three times as I ran those migrations. However, this week, as I updated all the tables, I found a much cleaner and (I think) preferable way to do it.
+
+Since knex functions just return promises, it's fairly straightforward to write separate knex functions, and then chain them together. For example, yesterday I added columns for SendGrid to three separate tables. Instead of doing three separate migrations, I just wrote one migration with all the operations in it.
+
+![chaining knex functions](./knex_sg.png)
+
+I write a function to add a column to the students table, another one to add a column to the classes tbale, and another to add a column to the refreshrs table. Then I simply chain those functions on lines 2 through 4.
+
+Here's another one to update the column names on both the student and teachers table.
+
+![more chaining!](./knex_names.png)
+
+I'm sure this is common knowledge to a lot of people, but for me it was a nice discovery that has made my knex migrations cleaner, simpler, and easier to read.
+
+# Part Two: Milestone Reflections
