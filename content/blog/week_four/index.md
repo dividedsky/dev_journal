@@ -57,3 +57,9 @@ Then we create three campaigns (for three different emails) for the refreshr, in
 This still doesn't feel like the cleanest solution, and hopefully it can be refactored later. But at least we got rid of that setTimeout!
 
 # Part Two: Milestone Reflections
+
+Working with the team to make our site look and feel as good as it works made this a pretty gratifying week. Admittedly, I probably did less than most (or all) in terms of making the site clean and shiny, but it was definitely a fun week to see our app really begin to look like a real-world product.
+
+The focus definitely shifted to the front end this week, and making sure the presentation of our site was improved. Of course, as we did that, we found that things on the back end had to be debugged our altered to get things working just as we wanted.
+
+We still have some work to do, but I think our site is looking so much better after this week, and I'm excited to add even more polish and hunt some bugs next week.
