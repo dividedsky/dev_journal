@@ -37,3 +37,24 @@ I mostly worked on the front end this week, and most of that work was focused on
   * [trello]('https://trello.com/c/mAg63AYY/93-edit-class-styling-and-logic')
 
 ## Detailed Analysis
+The edit class page is where I was focused most of the week. The edit class page has a ton of functionality in it and was a complex page to work in. We needed to be sure that the teacher would be able to edit the class name, add students, remove students, add and remove refreshrs, and update refreshr dates. Adding to the complexity of all this was that every single operation had to be run through SendGrid as well as our own database.
+
+Initially, we had the class refreshrs displayed in cards at the bottom of the page. When we originally designed the page this looked fine, but as we continued to test it we realized that the section became very unwieldy when a lot of refreshrs were added to a class.
+
+I changed the card style to use a Material UI list item, which I think looks much cleaner.
+
+![refreshr list](./refreshr_list.png)
+
+I also added a Material UI dialog for a teacher to select new refreshrs to add to the class.
+
+![refreshr dialog](./refreshr_dialog.png)
+
+The lists came out so much cleaner than the cards that I also replaced the cards on the create class form with two lists, one for the teachers refreshrs and ones for already scheduled refreshrs.
+
+![create class lists](./create_lists.png)
+
+## Part Two: Milestone Reflections
+
+The 90-90 rule is a quip, but there's a lot of truth to it, as well. Finishing up a project is not easy. All those things that you've been putting on the back burner for so long finally have to be deal with. There's a lot of bugs and UI issues that pop up that have to be remedied. And it's probably not uncommon to feel that if you just had a couple more days or weeks, you could get the app to be just the way you want it.
+
+But looking back on what we accomplished, I feel really proud of what we did. It was definitely a challening experience, but also a really rewarding one. I feel really fortunate to have been part of such a great team and to have accomplished what we did. And I'm definitely looking forward to sleeping for the weekend now and not thinking about refreshrs, at least for a little while.
